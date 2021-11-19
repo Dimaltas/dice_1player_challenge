@@ -9,12 +9,12 @@ function rollTheDice() {
     sum = sum + num1;
     console.log(sum);
     
-    document.querySelector('p').innerHTML = "The sum is "+sum;
+    document.querySelectorAll('p')[0].innerHTML = "The sum is "+sum;
     if(sum >20){
-        document.querySelector('p').innerHTML = "Congratulations you won!";
+        document.querySelectorAll('p')[1].innerHTML = "Congratulations you won!";
         sum = 0;
     }else if(num1 == 1){
-        document.querySelector('p').innerHTML = "You lose";
+        document.querySelectorAll('p')[1].innerHTML = "You lose";
         sum = 0;
     }
 }
